@@ -5,5 +5,10 @@ repos:
     name: AI Code Review
     entry: python -m code_review.hooks.pre_commit
     language: python
-    stages: [commit]
+    stages: [pre-commit]
+    additional_dependencies:
+      - .
+      - setuptools>=65.5.1
+    args: [--config=pyproject.toml]
+    pass_filenames: false
     verbose: true
