@@ -1,0 +1,4 @@
+<action id="CodeReview" class="actions.CodeReviewAction"
+        text="Run AI Review" description="Perform AI code analysis">
+    <add-to-group group-id="CodeMenu" anchor="last"/>
+</action>
