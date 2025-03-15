@@ -2,7 +2,7 @@ from tree_sitter import Language, Parser
 
 class ASTParser:
     def __init__(self, lang='python'):
-        self.lang = Language('./parsers/python.so', lang)
+        self.lang = Language('./parsers/python.so')
         self.parser = Parser()
         self.parser.set_language(self.lang)
 
